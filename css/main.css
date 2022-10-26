@@ -678,7 +678,7 @@ body{
     }
     .footer {
         height: 100%;
-        margin-top: 10vh;
+        margin-top: 30vh;
         padding: 0 0 0 0;
         display: flex;
         justify-content: space-evenly;
@@ -824,8 +824,8 @@ body{
     }
     .service-banner .board {
         height: 300px;
-        width: 350px;
-        min-width: 300px;
+        width: 300px;
+        min-width: 250px;
     }
     .main-services span {
         font-size: 4rem;

@@ -187,6 +187,14 @@ li{
     transform-origin: center;
     transform: rotate3d('30deg');
 }
+.blinker{
+    animation: blinker 1s linear infinite ;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
 .main-services{
     /* border: #0da34e solid; */
     width: 490px;
@@ -282,7 +290,6 @@ li{
 }
 .section-image:hover img {
     transform: scale(0.8, 0.8);
-    transform: translate(-20px, -20px);
     border-radius: 3rem;
 }
 .section-head h1{
@@ -307,7 +314,7 @@ li{
     justify-content: center;
     height: 10%;
     width: 20rem;
-    padding: 2rem 0 2rem 0 ;
+    padding: 1.5rem 0 1.5rem 0 ;
     border: none;
     color: #fff;
     border-radius: 3rem;
@@ -342,8 +349,8 @@ h2, p{
     padding-right: 0rem;
 }
 .section-button-container{
-    padding: 3rem;
-    max-width: 30%;
+    padding: 1.5rem;
+    max-width: 40%;
 }
 .card-divisions{
     padding: 3rem;
@@ -571,6 +578,7 @@ body{
     padding: 6rem 0 0 8rem;
     display: flex;
     justify-content: space-evenly;
+    background-color: #f5f5f5;
 }
 .footer .image{
     width: 100%;
@@ -657,11 +665,12 @@ body{
         font-size: 5rem;
     }
     .footer {
-        height: fit-content;
-        margin-top: 80vh;
+        height: 100%;
+        margin-top: 100vh;
         padding: 0 0 0 0;
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 }
 
@@ -675,7 +684,7 @@ body{
     }
     .section-button-container {
         padding: 1rem;
-        max-width: 30%;
+        max-width: 40%;
     }
     .section-button-container button{
         width: 13rem;
@@ -743,9 +752,9 @@ body{
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .sections-container {
+    /* .sections-container {
         flex-wrap: wrap;
-    }
+    } */
     .section-body{
         padding-bottom: 0.5rem;
         margin-bottom: 0;
@@ -763,6 +772,24 @@ body{
     .metrics {
         flex-wrap: wrap;
     }
-
+    .section-button-container {
+        display: none;
+    }
+    .section-head h1{
+        font-size: 4rem;
+    }
+    .values-metrics .text-values h1{
+        font-size: 4rem;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .values-metrics .text-values h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .values-metrics .text-values p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 

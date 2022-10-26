@@ -1,22 +1,34 @@
 const serviceBoard = document.querySelector('.main-services');
 // const serviceTag = document.querySelector('.service');
-const services = ['Vessel Cleaning', 'Ship Cleaning', 'Office Cleaning', 'Residential Cleaning', 'Janitorial Cleaning', 'Carpet/Rug cleaning', 'Commercial Cleaning', 'Household Cleaning']
+// const services = ['Vessel Cleaning', 'Ship Cleaning', 'Office Cleaning', 'Residential Cleaning', 'Janitorial Cleaning', 'Carpet/Rug cleaning', 'Commercial Cleaning', 'Household Cleaning'];
+const services = ['Cleaning Services']
+let textPosition = 0;
+const speed = 200;
 
-import { typeWriter } from "my-typewriter";
+// import { typeWriter } from "my-typewriter";
 
-typeWriter({
-  texts: services,
-  // pause in milliseconds
-  letterPause: 1200,
-  // typing speed
-  typeSpeed: 0,
-  // erasing speed
-  eraseSpeed: 100,
-  // binking speed (cursor)
-  blinkSpeed: 300,
-  // default animation speed
-  speed: 200,
-})
+function typewriter () {
+  services.forEach((serv) => {
+    document.querySelector('#my-typewriter').innerHTML = serv.substring(0, textPosition) + `<span class="blinker">\u25ae</span>`;
+    if (textPosition++ != serv.length) setTimeout(typewriter, speed);
+  }); 
+}
+
+window.addEventListener('load', typewriter);
+
+// typeWriter({
+//   texts: services,
+  
+//   letterPause: 1200,
+  
+//   typeSpeed: 0,
+  
+//   eraseSpeed: 100,
+  
+//   blinkSpeed: 300,
+  
+//   speed: 200,
+// })
 
 console.log("what's up?");
 

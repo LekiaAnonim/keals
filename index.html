@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEALS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/my-typewriter/public/myTypewriter.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js" async="false"></script>
+    
 </head>
 <body>
     <nav class="nav-menu">
@@ -14,21 +19,379 @@
                 <p class="logo">KEALS</p>
             </div>
             <div class="menus">
-                <ul>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href="">PRODUCTS</a></li>
-                    <li><a href="">GALLERY</a></li>
+                <ul class="navmenu">
+                    <li class="target nav-item"><a class="text nav-link" href="#contact-us">CONTACT</a></li>
+                    <li class="target nav-item"><a class="text nav-link" href="#services">SERVICES</a></li>
+                    <li class="target nav-item"><a class="text nav-link" href="#about-us">ABOUT</a></li>
                 </ul>
             </div>
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <div class="lets-talk">
                 <p>LET'S TALK</p>
+                
                 <div class="contact-form-container">
-                    <img src="/images/edit_48px.png" alt="contact form" srcset="">
+                    <a href="#contact-us"><img src="/images/edit_48px.png" alt="contact form" srcset=""></a>
                 </div>
             </div>
         </div>
     </nav>
+    
+    <div class="first-section-container">
+        <div class="we-services">
+            <div class="we-image target">
+                <img class="text" src="/images/giphy.gif" alt="">
+            </div>
+            <div class="we-text">
+                <div class="main-text">
+                    <p>WE</p>
+                </div>
+                <div class="service-banner">
+                    <div class="head">
+                        <div class="pin"></div>
+                    </div>
+                    <div class="string"></div>
+                    <div class="head">
+                        <div class="pin"></div>
+                    </div>
+                    <div class="board">
+                        <div class="main-services">
+                            <span id="my-typewriter"></span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="service-images">
+            <div class="main-image">
+                <img src="/images/image-processing20210217-23409-unscreen.gif" alt="">
+            </div>
+            <div class="images">
+                <div class="target">
+                    <img class="magnet text" src="/images/Decon-3-640x680.jpg" alt="">
+                </div>
+                <div class="target">
+                    <img class="magnet text" src="/images/IMG-a6f7a334560e53c4ac67d7d0630ab2a1-V-1.jpg" alt="">
+                </div>
+                <div class="target">
+                    <img class="magnet text" src="/images/Industrial cleaning ship.jpg" alt="">
+                </div>
+               <div class="target">
+                <img class="magnet text" src="/images/Tank-Vessel-Cleaning-d.jpg" alt="">
+               </div>
+               <div class="target">
+                <img class="magnet text" src="/images/vessel-cleaning-services.png" alt="">
+               </div>
+                
+            </div>
+            <div class="cursor" id="cursor"></div>
+        </div>
+        
+    </div>
+
+    <div class="contact-us" id="contact-us">
+        
+        <div class="contact-us-container">
+            <div class="contact-us-text">
+                <h1>Hi!</h1>
+                <p>What have you got for us? Hit us up!</p>
+                <div class="phone">
+                    <div class="image">
+                        <img src="/images/phone_60px.png" alt="">
+                    </div>
+                    <div class="contact"><a href="tel:+2348137110189">+2348137110189</a></div>
+                </div>
+                <div class="phone">
+                    <div class="image">
+                        <img src="/images/email_96px.png" alt="">
+                    </div>
+                    <div class="contact"><a href="mailto:prosperlekia@gmail.com">hello@keals.com</a></div>
+                </div>
+            </div>
+            <div class="contact-us-image">
+                <img src="/images/21e0a0_393bd21b729e45d29715c5e1868b0567_mv2.gif" alt="">
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="second-section" id="services">
+        <div class="section-head">
+            <h1>OUR SERVICES</h1>
+        </div>
+        <div class="section-divide second-divide">
+            <div class="section-button-container">
+                <div class="level3">
+                    <button class="sectionButton allService-button">ALL SERVICES</button>
+                </div>
+            </div>
+            <div class="section-container-card">
+                <div class="sections-container">
+                    <div class="section-body card-divisions">
+                        <h2 class="section-body-head">Vessel Cleaning</h2>
+                        <div class="section-body-text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur aliquid dicta sed dignissimos inventore
+                                nam
+                                voluptas temporibus distinctio corrupti maiores sunt nisi, iusto perspiciatis repudiandae dolore
+                                perferendis
+                                quos.
+                                Aliquam, perspiciatis.</p>
+                
+                        </div>
+                
+                    </div>
+                    <div class="section-image card-divisions">
+                        <img src="/images/vessel-cleaning-services.png" alt="">
+                    </div>
+                </div>
+                <div class="sections-container">
+
+                    <div class="section-image card-divisions">
+                        <img src="/images/Decon-3-640x680.jpg" alt="">
+                    </div>
+                    <div class="section-body card-divisions">
+                        <h2 class="section-body-head">Office Cleaning</h2>
+                        <div class="section-body-text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur aliquid dicta sed dignissimos inventore
+                                nam
+                                voluptas temporibus distinctio corrupti maiores sunt nisi, iusto perspiciatis repudiandae dolore
+                                perferendis
+                                quos.
+                                Aliquam, perspiciatis.</p>
+                
+                        </div>
+                
+                    </div>
+                    
+                </div>
+                <div class="sections-container">
+                    <div class="section-body card-divisions">
+                        <h2 class="section-body-head">Janitorial Cleaning</h2>
+                        <div class="section-body-text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur aliquid dicta sed dignissimos inventore
+                                nam
+                                voluptas temporibus distinctio corrupti maiores sunt nisi, iusto perspiciatis repudiandae dolore
+                                perferendis
+                                quos.
+                                Aliquam, perspiciatis.</p>
+                
+                        </div>
+                
+                    </div>
+                    <div class="section-image card-divisions">
+                        <img src="/images/marine-tank-cleaning_27124_service_image.jpg" alt="">
+                    </div>
+                </div>
+                <div class="sections-container">
+                    <div class="section-image card-divisions">
+                        <img src="/images/IMG-a6f7a334560e53c4ac67d7d0630ab2a1-V-1.jpg" alt="">
+                    </div>
+                    <div class="section-body card-divisions">
+                        <h2 class="section-body-head">Carpet/Rug Cleaning</h2>
+                        <div class="section-body-text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur aliquid dicta sed dignissimos inventore
+                                nam
+                                voluptas temporibus distinctio corrupti maiores sunt nisi, iusto perspiciatis repudiandae dolore
+                                perferendis
+                                quos.
+                                Aliquam, perspiciatis.</p>
+                
+                        </div>
+                
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="second-section" id="third-section">
+        <div class="section-head">
+            <h1 class="headline">REVIEW FROM CLIENTS</h1>
+        </div>
+        <div class="section-divide">
+            <div class="section-button-container">
+                <div class="level3">
+                    <button class="sectionButton client-review-button">HEAR FROM OUR CLIENTS</button>
+                </div>
+            </div>
+            <div class="section-client-review">
+                <div class="client-review-card">
+                    <div class="client-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores obcaecati praesentium veritatis. Doloribus, at minus! Corporis, consequuntur debitis! Modi odio sed suscipit eius a, impedit dicta laborum nisi libero eveniet!
+                        </p>
+                    </div>
+                    <div class="client-profile">
+                        <div class="client-image">
+                            <img src="images/_123838527_chubais.jpg" alt="" srcset="">
+                        </div>
+                        <div class="profile-desc">
+                            <div class="client-name">
+                                <p>Kyoto Shigato</p>
+                            </div>
+                            <div class="client-org">
+                                <p>Alibaba Group</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="client-review-card">
+                    <div class="client-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores obcaecati praesentium veritatis.
+                            Doloribus, at minus! Corporis, consequuntur debitis! Modi odio sed suscipit eius a, impedit dicta laborum
+                            nisi libero eveniet!
+                        </p>
+                    </div>
+                    <div class="client-profile">
+                        <div class="client-image">
+                            <img src="images/_123838527_chubais.jpg" alt="" srcset="">
+                        </div>
+                        <div class="profile-desc">
+                            <div class="client-name">
+                                <p>Kyoto Shigato</p>
+                            </div>
+                            <div class="client-org">
+                                <p>Alibaba Group</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="client-review-card">
+                    <div class="client-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores obcaecati praesentium veritatis.
+                            Doloribus, at minus! Corporis, consequuntur debitis! Modi odio sed suscipit eius a, impedit dicta laborum
+                            nisi libero eveniet!
+                        </p>
+                    </div>
+                    <div class="client-profile">
+                        <div class="client-image">
+                            <img src="images/_123838527_chubais.jpg" alt="" srcset="">
+                        </div>
+                        <div class="profile-desc">
+                            <div class="client-name">
+                                <p>Kyoto Shigato</p>
+                            </div>
+                            <div class="client-org">
+                                <p>Alibaba Group</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="client-review-card">
+                    <div class="client-text">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores obcaecati praesentium veritatis.
+                            Doloribus, at minus! Corporis, consequuntur debitis! Modi odio sed suscipit eius a, impedit dicta laborum
+                            nisi libero eveniet!
+                        </p>
+                    </div>
+                    <div class="client-profile">
+                        <div class="client-image">
+                            <img src="images/_123838527_chubais.jpg" alt="" srcset="">
+                        </div>
+                        <div class="profile-desc">
+                            <div class="client-name">
+                                <p>Kyoto Shigato</p>
+                            </div>
+                            <div class="client-org">
+                                <p>Alibaba Group</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="values-metrics" id="about-us">
+        <div class="text-values">
+            <h1>Our Reputation Preceeds us</h1>
+            <div class="awards">
+                <div class="honor">
+                    <img src="/images/gold-ribbon-award-png-115533555784wrhu70oqn-removebg-preview.png" alt="">
+                </div>
+                <div class="honor">
+                <img src="/images/pngtree-100-satisfaction-guaranteed-black-gold-trust-badge-transparent-png-psd-clipart-png-image_4563109-removebg-preview.png" alt="">
+                </div>
+                <div class="honor">
+                    <img src="/images/transparent-award-badge-blank-award-badge-blank-badge-5f833466026d67.81082118160243415001.png" alt="">
+                </div>
+            </div>
+            <h2>we pride ourselves on
+            <span>Honesty</span> and <span>Exceptional Service</span></h2>
+            <p>Our main focus is making sure our clients are 100% satisfied, and we are always looking to improve in every aspect of
+            our business for our valued customers.
+            </p>
+        </div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="metrics">
+            <div class="metric">
+                <h3 class="measure">98%</h3>
+                <p class="kpi">Customer Satisfaction</p>
+            </div>
+            <div class="metric">
+                <h3 class="measure">100%</h3>
+                <p class="kpi">Honesty</p>
+            </div>
+            <div class="metric">
+                <h3 class="measure">10X</h3>
+                <p class="kpi">Staff Performance</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+        <div class="main">
+            <div class="socials">
+                <a href="#"><div class="social instagram">Instagram</div></a>
+                <a href="#"><div class="social twitter">Twitter</div></a>
+                <a href="#"><div class="social facebook">Facebook</div></a>
+                <a href="#"><div class="social tiktok">TikTok</div></a>
+                <a href="#"><div class="social linkedin">LinkedIn</div></a>
+            </div>
+            <div class="footer-services">
+                <h2>SERVICES</h2>
+                <div class="foot-service">
+                    <p>Vessel Cleaning</p>
+                    <p>Office Cleaning</p>
+                    <p>Residential Cleaning</p>
+                    <p>Janitorial Cleaning</p>
+                    <p>Carpet/rug Cleaning</p>
+                    <p>Commercial/Household Cleaning</p>
+                </div>
+                
+            </div>
+            <div class="footer-email">
+                <h2>WHY NOT DROP A MESSAGE <span>?</span></h2>
+                <p><span>hello</span>@keals.com</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="/images/darshan-patel-DfzzpBRZCT0-unsplash.jpg" alt="">
+        </div>
+        <div class="back-to-top">
+            <img src="/images/sort_up_60px.png" alt="">
+        </div>
+    </div>
+    
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="magnet-mouse.min.js"></script>
 </body>
 </html>

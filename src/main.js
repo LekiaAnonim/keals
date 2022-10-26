@@ -30,7 +30,7 @@ window.addEventListener('load', typewriter);
 //   speed: 200,
 // })
 
-console.log("what's up?");
+// console.log("what's up?");
 
 // -----------------------------------------------------
 // window.onscroll = function () { scrollFunction };
@@ -166,7 +166,7 @@ const sectionRect = sectionDivide.getBoundingClientRect();
 const sectionTop = sectionRect.top;
 const sectionBottom = sectionRect.bottom;
 
-console.log('---------------------------------');
+// console.log('---------------------------------');
 
 
 window.addEventListener('scroll', function () {
@@ -195,7 +195,7 @@ function scrollReveal(elements, container) {
     let contDict = container.getBoundingClientRect();
     let sectTop = contDict.top;
     let sectionBottom = contDict.bottom;
-    console.log(sY, sectTop);
+    // console.log(sY, sectTop);
     if (sY > sectTop+2500) {
       elements.forEach((elem) => {
         // console.log(elem);

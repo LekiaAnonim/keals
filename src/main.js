@@ -1,68 +1,15 @@
-const serviceBoard = document.querySelector('.main-services');
-// const serviceTag = document.querySelector('.service');
-// const services = ['Vessel Cleaning', 'Ship Cleaning', 'Office Cleaning', 'Residential Cleaning', 'Janitorial Cleaning', 'Carpet/Rug cleaning', 'Commercial Cleaning', 'Household Cleaning'];
-const services = ['Cleaning Services']
-let textPosition = 0;
-const speed = 200;
-
-// import { typeWriter } from "my-typewriter";
-
-function typewriter () {
-  services.forEach((serv) => {
-    document.querySelector('#my-typewriter').innerHTML = serv.substring(0, textPosition) + `<span class="blinker">\u25ae</span>`;
-    if (textPosition++ != serv.length) setTimeout(typewriter, speed);
-  }); 
-}
-
-window.addEventListener('load', typewriter);
-
-// typeWriter({
-//   texts: services,
-  
-//   letterPause: 1200,
-  
-//   typeSpeed: 0,
-  
-//   eraseSpeed: 100,
-  
-//   blinkSpeed: 300,
-  
-//   speed: 200,
-// })
-
-// console.log("what's up?");
-
-// -----------------------------------------------------
-// window.onscroll = function () { scrollFunction };
 
 
-// function scrollFunction() {
-//   document.querySelector('.nav-container').classList.add('black-background');
-//   console.log('Hey');
-// }
-let trans = 0;
-const serviceImages = document.querySelectorAll('.service-images .images img');
-const serviceImageDiv = document.querySelector('.images');
 window.addEventListener('scroll', function () {
   
-  serviceImages.forEach((image, i) => {
-    if (document.documentElement.scrollTop <= 0) {
-      image.style.transform = `translateY(0)`;
-    } else {
-      trans = trans + i;
-      // console.log(trans);
-      image.style.transform = `translate(${-i*150}px, ${-i * 100}px)`;
-      // image.style.transform = `translateX(${-i*100}px)`;
-      image.style.transition = `transform 5s`;
-    };
-  });
+
   if (document.documentElement.scrollTop > 0) {
 
-    document.querySelector('.first-section-container').style.marginTop = '0';
+    document.querySelector('.landing-section').style.marginTop = '0';
     document.querySelector('.nav-container').classList.add('black-background');
     document.querySelector('.contact-form-container').style.background = '#0da34e';
   } else {
-    document.querySelector('.first-section-container').style.marginTop = '-55px';
+    // document.querySelector('.first-section-container').style.marginTop = '-55px';
     document.querySelector('.nav-container').classList.remove('black-background');
     document.querySelector('.contact-form-container').style.background = 'black';
   }
@@ -70,91 +17,7 @@ window.addEventListener('scroll', function () {
 
 // Mouse track
 
-function mouseTrack(element) {
-  document.onmousemove = (event) => {
-    const { clientX, clientY } = event;
-    
-    var rect = element.getBoundingClientRect();
-    // console.log(`clientX : ${clientX}, rect.right: ${rect.right}, rect.left: ${rect.left}, clientY: ${clientY}, rect.top: ${rect.top}, rect.bottom: ${rect.bottom}, pageX: ${event.pageX}, pageY: ${event.pageY}`);
-    // let dist = Math.floor(Math.sqrt(Math.pow(clientX - (rect.left+(element.width()/2)), 2) + Math.pow(clientY - (rect.top+(element.height()/2)), 2)));
-    // console.log(dist);
-    // if()
-  };
-}
-mouseTrack(serviceImageDiv);
 
-
-// console.clear();
-const element = document.querySelector(".cursor");
-const target = document.querySelector(".target");
-const text = document.querySelector(".text");
-class Cursor {
-  constructor(el, target, text) {
-    this.el = el;
-    // this.target = target;
-    // this.text = text;
-    // this.triggerDistance = this.target.getBoundingClientRect().width;
-    this.bind();
-  }
-
-  bind() {
-    document.addEventListener("mousemove", this.move.bind(this), false);
-  }
-
-  move(e) {
-    const cursorPosition = {
-      left: e.clientX,
-      top: e.clientY
-    };
-    document.querySelectorAll(".target").forEach((single) => {
-      const triggerDistance = single.getBoundingClientRect().width;
-
-      const targetPosition = {
-        left:
-          single.getBoundingClientRect().left +
-          single.getBoundingClientRect().width / 2,
-        top:
-          single.getBoundingClientRect().top +
-          single.getBoundingClientRect().height / 2
-      };
-      const distance = {
-        x: targetPosition.left - cursorPosition.left,
-        y: targetPosition.top - cursorPosition.top
-      };
-
-      const angle = Math.atan2(distance.x, distance.y);
-      const hypotenuse = Math.sqrt(
-        distance.x * distance.x + distance.y * distance.y
-      );
-      if (hypotenuse < triggerDistance) {
-        // Nikhil - look at this code to adjust the round cursor area sizing
-        TweenMax.to(this.el, 0.2, {
-          left: targetPosition.left - (Math.sin(angle) * hypotenuse) / 2,
-          top: targetPosition.top - (Math.cos(angle) * hypotenuse) / 2,
-          height: single.clientHeight,
-          width: single.clientWidth
-        });
-        TweenMax.to(single.querySelector(".text"), 0.2, {
-          x: -((Math.sin(angle) * hypotenuse) / 2),
-          y: -((Math.cos(angle) * hypotenuse) / 2)
-        });
-      } else {
-        TweenMax.to(this.el, 0.2, {
-          left: cursorPosition.left,
-          top: cursorPosition.top,
-          height: "12px",
-          width: "12px"
-        });
-
-        TweenMax.to(single.querySelector(".text"), 0.2, {
-          x: 0,
-          y: 0
-        });
-      }
-    });
-  }
-}
-const cursor = new Cursor(element, target);
 
 
 // ----------------------------------------------------
@@ -243,3 +106,77 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+
+// Slideshow
+
+// Master DOManipulator v2 ------------------------------------------------------------
+const items = document.querySelectorAll('.item'),
+  controls = document.querySelectorAll('.control'),
+  headerItems = document.querySelectorAll('.item-header'),
+  descriptionItems = document.querySelectorAll('.item-description'),
+  activeDelay = .76,
+  interval = 5000;
+
+let current = 0;
+
+const slider = {
+  init: () => {
+    controls.forEach(control => control.addEventListener('click', (e) => { slider.clickedControl(e) }));
+    controls[current].classList.add('active');
+    items[current].classList.add('active');
+  },
+  nextSlide: () => { // Increment current slide and add active class
+    slider.reset();
+    if (current === items.length - 1) current = -1; // Check if current slide is last in array
+    current++;
+    controls[current].classList.add('active');
+    items[current].classList.add('active');
+    slider.transitionDelay(headerItems);
+    slider.transitionDelay(descriptionItems);
+  },
+  clickedControl: (e) => { // Add active class to clicked control and corresponding slide
+    slider.reset();
+    clearInterval(intervalF);
+
+    const control = e.target,
+      dataIndex = Number(control.dataset.index);
+
+    control.classList.add('active');
+    items.forEach((item, index) => { 
+      if (index === dataIndex) { // Add active class to corresponding slide
+        item.classList.add('active');
+      }
+    })
+    current = dataIndex; // Update current slide
+    slider.transitionDelay(headerItems);
+    slider.transitionDelay(descriptionItems);
+    intervalF = setInterval(slider.nextSlide, interval); // Fire that bad boi back up
+  },
+  reset: () => { // Remove active classes
+    items.forEach(item => item.classList.remove('active'));
+    controls.forEach(control => control.classList.remove('active'));
+  },
+  transitionDelay: (items) => { // Set incrementing css transition-delay for .item-header & .item-description, .vertical-part, b elements
+    let seconds;
+    
+    items.forEach(item => {
+      const children = item.childNodes; // .vertical-part(s)
+      let count = 1,
+        delay;
+      
+      item.classList.value === 'item-header' ? seconds = .015 : seconds = .007;
+
+      children.forEach(child => { // iterate through .vertical-part(s) and style b element
+        if (child.classList) {
+          item.parentNode.classList.contains('active') ? delay = count * seconds + activeDelay : delay = count * seconds;
+          child.firstElementChild.style.transitionDelay = `${delay}s`; // b element
+          count++;
+        }
+      })
+    })
+  },
+}
+
+let intervalF = setInterval(slider.nextSlide, interval);
+slider.init();

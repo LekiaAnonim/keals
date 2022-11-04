@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script type="module" src="https://cdn.jsdelivr.net/npm/my-typewriter/public/myTypewriter.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js" async="false"></script> -->
     <script type="module" src="/src/main.js"></script>
 </head>
@@ -16,13 +17,14 @@
     <nav class="nav-menu">
         <div class="nav-container">
             <div class="log-container">
-                <a href="index.html"><p class="logo">KEALS</p></a>
+                <a href="index.html"><img src="/images/IMG_0903.PNG" alt="Keals" class="logo"></a>
             </div>
             <div class="menus">
                 <ul class="navmenu">
                     <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                     <li class="nav-item"><a class="nav-link" href="cleaning.html">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about-us">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="target nav-item"><a class="text nav-link" href="#">BLOG</a></li>
                 </ul>
             </div>
             <button class="hamburger">
@@ -34,37 +36,75 @@
                 <p>LET'S TALK</p>
                 
                 <div class="contact-form-container">
-                    <a href="#contact-us"><img src="/images/edit_48px.png" alt="contact form" srcset=""></a>
+                    <a href="contact.html"><img src="/images/edit_48px.png" alt="contact form" srcset=""></a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="landing-section">
-        <!-- <p class="title animate-character">Mr. Keals</p> -->
-        <div class="waviy">
-            <span class="title animate-character" style="--i:1">M</span>
-            <span class="title animate-character" style="--i:2">R</span>
-            <span class="title animate-character" style="--i:3">.</span>
-            <span class="title animate-character" style="--i:4"> </span>
-            <span class="title animate-character" style="--i:5">K</span>
-            <span class="title animate-character" style="--i:6">E</span>
-            <span class="title animate-character" style="--i:7">A</span>
-            <span class="title animate-character" style="--i:8">L</span>
-            <span class="title animate-character" style="--i:9">S</span>
+    <div class="landingpage-background">
+        <div class="landing-section">
+            <!-- <p class="title animate-character">Mr. Keals</p> -->
+            <div class="waviy">
+                <span class="title animate-character" style="--i:1">M</span>
+                <span class="title animate-character" style="--i:2">R</span>
+                <span class="title animate-character" style="--i:3">.</span>
+                <span class="title animate-character" style="--i:4"> </span>
+                <span class="title animate-character" style="--i:5">K</span>
+                <span class="title animate-character" style="--i:6">E</span>
+                <span class="title animate-character" style="--i:7">A</span>
+                <span class="title animate-character" style="--i:8">L</span>
+                <span class="title animate-character" style="--i:9">S</span>
+            </div>
+            <div class="target">
+                <p class="title">Mon <span class="text">u</span>ment 🗽</p>
+            </div>
+            <p class="title-desc">We are inspired by rendering services and products that aid comfort and limit inconvenience in
+                every sector we are involved in.</p>
+        
         </div>
-        <div class="target">
-            <p class="title">Mon <span class="text">🗿</span> ment</p>
-        </div>
-        <p class="title-desc">We build engaging user experience for early-stage
-        
-        startups by connecting the dots between users’ needs
-        
-        and the client’s business model.</p>
-        
     </div>
-    <div class="content-width">
+    
+    <div class="service-highlight">
+        <div class="service-hight-card">
+            <div class="service-highlight-container">
+                <div class="service-highlight-icon">
+                    <img src="/images/Vacuuming_96px.png" alt="">
+                </div>
+                <div class="service-highlight-text">
+                    <p>Cleaning Services</p>
+                </div>
+            </div>
+            <div class="service-highlight-container">
+                <div class="service-highlight-icon">
+                    <img src="/images/jewelry_96px.png" alt="">
+                </div>
+                <div class="service-highlight-text">
+                    <p>Jewelry Services</p>
+                </div>
+            </div>
+            <div class="service-highlight-container">
+                <div class="service-highlight-icon">
+                    <img src="/images/wheat_96px.png" alt="">
+                </div>
+                <div class="service-highlight-text">
+                    <p>Agriculture</p>
+                </div>
+            </div>
+            <div class="service-highlight-container">
+                <div class="service-highlight-icon">
+                    <img src="/images/exchange_96px.png" alt="">
+                </div>
+                <div class="service-highlight-text">
+                    <p>Exchange Services</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-highlight-bottom">
+            Providing premium excellence in all products and services rendered.
+        </div>
+    </div>
+    <!-- <div class="content-width">
         <div class="slideshow">
-            <!-- Slideshow Items -->
             <div class="slideshow-items">
                 <div class="item">
                     
@@ -84,100 +124,10 @@
                         </div>
                     </div>
                     
-                    <!-- Staggered Description Elements -->
+                    
                     <div class="item-description">
                         <span class="vertical-part">
-                            <b>Nike</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ipsum</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>dolor</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>sit</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>amet,</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>consectetur</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>adipiscing</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>elit.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Pellentesque</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>elementum</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>gravida</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ex</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>at</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>maximus.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Nullam</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>quis</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>leo</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ipsum.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Lorem</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ipsum</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Nam</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>consectetur</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>malesuada</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>blandit.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Mauris</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>vulputate</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>purus</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>id</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>dolor</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>euismod</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>varius.</b>
+                            <b>Vessel cleaning, office cleaning, residential cleaning, Janitorial cleaning.</b>
                         </span>
                     </div>
                 </div>
@@ -187,239 +137,36 @@
                             <img class="item-image"
                                 src="/images/mike-cox-3yJOe33FeHY-unsplash.jpg" />
                         </div>
-                        <!-- Staggered Header Elements -->
+                        
                         <div class="item-header">
-                            <span class="vertical-part"><b>S</b></span>
-                            <span class="vertical-part"><b>p</b></span>
-                            <span class="vertical-part"><b>o</b></span>
-                            <span class="vertical-part"><b>t</b></span>
-                            <span class="vertical-part"><b>i</b></span>
-                            <span class="vertical-part"><b>f</b></span>
+                            <span class="vertical-part"><b>J</b></span>
+                            <span class="vertical-part"><b>e</b></span>
+                            <span class="vertical-part"><b>w</b></span>
+                            <span class="vertical-part"><b>e</b></span>
+                            <span class="vertical-part"><b>l</b></span>
+                            <span class="vertical-part"><b>r</b></span>
                             <span class="vertical-part"><b>y</b></span>
                         </div>
                     </div>
                     
-                    <!-- Staggered Description Elements -->
+                    
                     <div class="item-description">
                         <span class="vertical-part">
-                            <b>Spotify</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ipsum</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>dolor</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>sit</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>amet,</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>consectetur</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>adipiscing</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>elit.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Pellentesque</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>elementum</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>gravida</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ex</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>at</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>maximus.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Nullam</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>quis</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>leo</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ipsum.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Lorem</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ipsum</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Nam</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>consectetur</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>malesuada</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>blandit.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Mauris</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>vulputate</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>purus</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>id</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>dolor</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>euismod</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>varius.</b>
+                            <b>Jewelry sale, repairs, customizations, cleaning</b>
                         </span>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="item-image-description">
-                        <div class="item-image-container">
-                            <img class="item-image"
-                                src="/images/istockphoto-1350701180-170667a.jpg" />
-                        </div>
-                        <!-- Staggered Header Elements -->
-                        <div class="item-header">
-                            <span class="vertical-part"><b>A</b></span>
-                            <span class="vertical-part"><b>i</b></span>
-                            <span class="vertical-part"><b>r</b></span>
-                            <span class="vertical-part"><b>b</b></span>
-                            <span class="vertical-part"><b>n</b></span>
-                            <span class="vertical-part"><b>b</b></span>
-                        </div>
-                    </div>
-                   
-                    <!-- Staggered Description Elements -->
-                    <div class="item-description">
-                        <span class="vertical-part">
-                            <b>Airbnb</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ipsum</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>dolor</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>sit</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>amet,</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>consectetur</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>adipiscing</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>elit.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Pellentesque</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>elementum</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>gravida</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ex</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>at</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>maximus.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Nullam</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>quis</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>leo</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ipsum.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Lorem</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>ipsum</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Nam</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>consectetur</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>malesuada</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>blandit.</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>Mauris</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>vulputate</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>purus</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>id</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>dolor</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>euismod</b>
-                        </span>
-                        <span class="vertical-part">
-                            <b>varius.</b>
-                        </span>
-                    </div>
-                </div>
+                
             </div>
             <div class="controls">
                 <ul>
                     <li class="control" data-index="0"></li>
                     <li class="control" data-index="1"></li>
-                    <li class="control" data-index="2"></li>
+                    
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <div class="first-section-container">
         <div class="we-services">
             <div class="we-image target">
@@ -490,12 +237,7 @@
                     <div class="section-body card-divisions">
                         <a href="cleaning.html"><h2 class="section-body-head">Cleaning Services</h2></a>
                         <div class="section-body-text">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur aliquid dicta sed dignissimos inventore
-                                nam
-                                voluptas temporibus distinctio corrupti maiores sunt nisi, iusto perspiciatis repudiandae dolore
-                                perferendis
-                                quos.
-                                Aliquam, perspiciatis.</p>
+                            <p>Vessel cleaning, office cleaning, residential cleaning, janitorial cleaning.</p>
                 
                         </div>
                 
@@ -507,17 +249,12 @@
                 <div class="sections-container">
 
                     <div class="section-image card-divisions">
-                        <img src="/images/Decon-3-640x680.jpg" alt="">
+                        <img src="/images/wallpaperflare.com_wallpaper (2).jpg" alt="">
                     </div>
                     <div class="section-body card-divisions">
-                        <h2 class="section-body-head">Office Cleaning</h2>
+                        <h2 class="section-body-head">Jewelry Services</h2>
                         <div class="section-body-text">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur aliquid dicta sed dignissimos inventore
-                                nam
-                                voluptas temporibus distinctio corrupti maiores sunt nisi, iusto perspiciatis repudiandae dolore
-                                perferendis
-                                quos.
-                                Aliquam, perspiciatis.</p>
+                            <p>Jewelry sale, repairs, customization, cleaning.</p>
                 
                         </div>
                 
@@ -526,28 +263,23 @@
                 </div>
                 <div class="sections-container">
                     <div class="section-body card-divisions">
-                        <h2 class="section-body-head">Janitorial Cleaning</h2>
+                        <h2 class="section-body-head">Agricultural Services</h2>
                         <div class="section-body-text">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur aliquid dicta sed dignissimos inventore
-                                nam
-                                voluptas temporibus distinctio corrupti maiores sunt nisi, iusto perspiciatis repudiandae dolore
-                                perferendis
-                                quos.
-                                Aliquam, perspiciatis.</p>
+                            <p>Supply of cash crops, supply of food crops, supply of fruits, bulk supplies of the crops, supply of livestock.</p>
                 
                         </div>
                 
                     </div>
                     <div class="section-image card-divisions">
-                        <img src="/images/marine-tank-cleaning_27124_service_image.jpg" alt="">
+                        <img src="/images/wallpaperflare.com_wallpaper (5).jpg" alt="">
                     </div>
                 </div>
                 <div class="sections-container">
                     <div class="section-image card-divisions">
-                        <img src="/images/IMG-a6f7a334560e53c4ac67d7d0630ab2a1-V-1.jpg" alt="">
+                        <img src="/images/wallpaperflare.com_wallpaper (6).jpg" alt="">
                     </div>
                     <div class="section-body card-divisions">
-                        <h2 class="section-body-head">Carpet/Rug Cleaning</h2>
+                        <h2 class="section-body-head">Exchange Services</h2>
                         <div class="section-body-text">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur aliquid dicta sed dignissimos inventore
                                 nam
@@ -578,9 +310,10 @@
             <div class="section-client-review">
                 <div class="client-review-card">
                     <div class="client-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores obcaecati praesentium veritatis. Doloribus, at minus! Corporis, consequuntur debitis! Modi odio sed suscipit eius a, impedit dicta laborum nisi libero eveniet!
-                        </p>
+                        <blockquote>
+                            <p>"Keals monument limited is really out for business and has the client's interest at heart".</p>
+                        </blockquote>
+                            
                     </div>
                     <div class="client-profile">
                         <div class="client-image">
@@ -588,10 +321,10 @@
                         </div>
                         <div class="profile-desc">
                             <div class="client-name">
-                                <p>Kyoto Shigato</p>
+                                <p>Bartosz Wasilewski (Marine Manager)</p>
                             </div>
                             <div class="client-org">
-                                <p>Alibaba Group</p>
+                                <p>Deepwater Engineering Limited</p>
                             </div>
                         </div>
                         
@@ -599,11 +332,9 @@
                 </div>
                 <div class="client-review-card">
                     <div class="client-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores obcaecati praesentium veritatis.
-                            Doloribus, at minus! Corporis, consequuntur debitis! Modi odio sed suscipit eius a, impedit dicta laborum
-                            nisi libero eveniet!
-                        </p>
+                        <blockquote><p>
+                            "They are good at what they do, I can always trust them with my jewelry".
+                        </p></blockquote>
                     </div>
                     <div class="client-profile">
                         <div class="client-image">
@@ -611,61 +342,16 @@
                         </div>
                         <div class="profile-desc">
                             <div class="client-name">
-                                <p>Kyoto Shigato</p>
+                                <p>Mmukosolu Onuorah (Senior Data Analyst)</p>
                             </div>
                             <div class="client-org">
-                                <p>Alibaba Group</p>
+                                <p>Geodetic Offshore Services Limited</p>
                             </div>
                         </div>
                 
                     </div>
                 </div>
-                <div class="client-review-card">
-                    <div class="client-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores obcaecati praesentium veritatis.
-                            Doloribus, at minus! Corporis, consequuntur debitis! Modi odio sed suscipit eius a, impedit dicta laborum
-                            nisi libero eveniet!
-                        </p>
-                    </div>
-                    <div class="client-profile">
-                        <div class="client-image">
-                            <img src="images/_123838527_chubais.jpg" alt="" srcset="">
-                        </div>
-                        <div class="profile-desc">
-                            <div class="client-name">
-                                <p>Kyoto Shigato</p>
-                            </div>
-                            <div class="client-org">
-                                <p>Alibaba Group</p>
-                            </div>
-                        </div>
                 
-                    </div>
-                </div>
-                <div class="client-review-card">
-                    <div class="client-text">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores obcaecati praesentium veritatis.
-                            Doloribus, at minus! Corporis, consequuntur debitis! Modi odio sed suscipit eius a, impedit dicta laborum
-                            nisi libero eveniet!
-                        </p>
-                    </div>
-                    <div class="client-profile">
-                        <div class="client-image">
-                            <img src="images/_123838527_chubais.jpg" alt="" srcset="">
-                        </div>
-                        <div class="profile-desc">
-                            <div class="client-name">
-                                <p>Kyoto Shigato</p>
-                            </div>
-                            <div class="client-org">
-                                <p>Alibaba Group</p>
-                            </div>
-                        </div>
-                
-                    </div>
-                </div>
             </div>
         
         </div>
@@ -735,9 +421,13 @@
             </div>
             <div class="footer-email">
                 <h2>WHY NOT DROP A MESSAGE <span>?</span></h2>
-                <p><span>hello</span>@keals.com</p>
+                <p><span>keaslmonuments</span>@gmail.com</p>
             </div>
         </div>
+        <div class="foot-logo">
+            <img src="images/IMG_0900.PNG" alt="Keals Logo" class="footer-logo">
+        </div>
+        
         <div class="image">
             <img src="/images/darshan-patel-DfzzpBRZCT0-unsplash.jpg" alt="">
         </div>
@@ -746,7 +436,21 @@
     <div class="back-to-top">
         <img src="/images/sort_up_60px.png" alt="">
     </div>
-    
-    <!-- <script type="module" src="magnet-mouse.min.js"></script> -->
+    <!-- GetButton.io widget -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+2347033465454", // WhatsApp number
+                call_to_action: "Message us", // Call to action
+                button_color: "#FF6550", // Color of button
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!-- /GetButton.io widget -->
 </body>
 </html>

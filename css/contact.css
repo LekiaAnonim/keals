@@ -1,0 +1,15 @@
+.office{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.office-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    margin-top: 10rem;
+}

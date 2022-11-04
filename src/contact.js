@@ -1,11 +1,9 @@
-console.clear();
-
 window.addEventListener('scroll', function () {
   
 
   if (document.documentElement.scrollTop > 0) {
 
-    document.querySelector('.landing-section').style.marginTop = '0';
+    // document.querySelector('.landing-section').style.marginTop = '0';
     document.querySelectorAll('.nav-container').forEach((ele) => {
       ele.classList.add('black-background');
     })

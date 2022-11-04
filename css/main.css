@@ -1224,4 +1224,8 @@ body{
         height: 80vw;
     }
 
+    .footer-email p {
+        font-size: 1.5rem;
+    }
+
 }

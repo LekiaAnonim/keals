@@ -5,9 +5,6 @@
     line-height: 30px;
 }
 
-.about-text h3{
-    font-size: 3rem;
-}
 
 .pagination {
     position: absolute !important;
@@ -41,10 +38,15 @@
     margin: 0 auto;
 }
 
+.footer{
+    margin-top: 10rem;
+}
+
 @media (max-width: 699px) {
     .container {
         padding-right: 40px;
-        padding-left: 40px;
+        padding-left: 5px;
+
     }
 }
 
@@ -101,6 +103,11 @@
         right: 0;
         bottom: 0;
         left: 0;
+    }
+    .about-text {
+        font-size: 1.2rem;
+        word-wrap: break-word;
+        min-width: 280px;
     }
 }
 

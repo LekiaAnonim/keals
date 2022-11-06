@@ -316,4 +316,9 @@ label:nth-child(5) {
         transform: translate(-100%, 50%);
         transition: transform 0.5s ease-in-out;
     }
+
+    .slide__content P {
+        font-size: 1.2rem;
+        padding-right: 1rem;
+    }
 }

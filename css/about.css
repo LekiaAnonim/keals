@@ -1,10 +1,82 @@
 .about-text{
     min-width: 400px;
-    width: 60%;
+    width: 70%;
     font-size: 2rem;
     line-height: 30px;
 }
 
+.our-plan{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+.plan-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    margin: 0;
+}
+
+.plan-image{
+    width: 40%;
+    padding: 4rem;
+}
+.plan-image img{
+    max-width: 100%;
+    min-width: 120px;
+    
+}
+.plan-text-group{
+    margin-bottom: 8rem;
+}
+.plan-text{
+    padding: 4rem 10rem 4rem 0rem;
+    width: 60%;
+}
+.numbering{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    color:#000000;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.sub-numbering{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: #000000;
+    background-color: #b3f5b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+}
+
+.plan-text p{
+    font-size: 2rem;
+    color:#fff;
+}
+.plan-heading{
+    font-weight: 500;
+    padding: 1rem 10rem 1.5rem 0;
+    float: left;
+    font-size: 1.7rem;
+    color: rgb(134, 134, 134);
+}
+
+.sub-text{
+    transform: scale(0.7);
+    padding-left: 5rem;
+    color: #b3b3b3;
+}
 
 .pagination {
     position: absolute !important;
@@ -12,7 +84,7 @@
     text-align: center;
     right: 0;
     padding: 0 !important;
-    bottom: 30px;
+    bottom: 20px;
     z-index: 999;
 }
 
@@ -47,6 +119,36 @@
         padding-right: 40px;
         padding-left: 5px;
 
+    }
+    .plan-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .plan-text {
+        padding: 2rem 5rem 4rem 3rem;
+        width: 100%;
+    }
+    .plan-text p {
+        font-size: 1.5rem;
+    }
+
+    .plan-heading {
+        font-size: 1.2rem;
+    }
+
+    .sub-text {
+        transform: scale(0.7);
+        padding-left: 2rem;
+    }
+    .plan-text-group {
+        margin-bottom: 4rem;
+    }
+    .sub-numbering {
+        margin-bottom: 0rem;
+        
+    }
+    .plan-heading {
+        padding: 1rem 7rem 1rem 0;
     }
 }
 
@@ -84,6 +186,7 @@
     overflow: hidden;
     height: 100vh;
     min-height: 400px;
+    margin-bottom: 0;
 }
 
 .slideshow__slide {
@@ -119,6 +222,7 @@
         bottom: 0;
         left: 0;
     }
+    
 }
 
 .slideshow__slide-background-load-wrap {
@@ -252,7 +356,7 @@
 .slideshow__slide-caption-text {
     position: relative;
     height: 100%;
-    padding-top: 33vh;
+    padding-top: 10vh;
     transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
     transform: translate3d(0, 0, 0);
 }
@@ -548,7 +652,7 @@ button:hover,
 
 @media (min-width: 1200px) {
     body {
-        overflow: hidden;
+        /* overflow: hidden; */
         height: 100%;
     }
 }

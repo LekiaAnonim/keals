@@ -88,6 +88,10 @@
 .slide__content h1{
     font-size: 4vw;
 }
+.slide__content P{
+    font-size: 1.8rem;
+    padding-right: 2rem;
+}
 
 .slide__html{
     width: 100%;

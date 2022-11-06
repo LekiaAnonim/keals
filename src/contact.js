@@ -36,3 +36,14 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// --------------------------------------------------------------
+
+// ------------------------------------------------------------------
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
+document.querySelectorAll('.back-to-top').forEach((ele) => {
+  ele.addEventListener('click', scrollToTop);
+})

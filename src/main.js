@@ -83,6 +83,8 @@ let clientReviewContainer = document.querySelector('.section-client-review');
 let clientReview = document.querySelectorAll('.client-review-card');
 scrollReveal(clientReview, clientReviewContainer);
 
+
+// ------------------------------------------------------------------
 function scrollToTop() {
   window.scrollTo(0, 0);
 }

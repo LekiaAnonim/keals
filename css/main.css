@@ -520,8 +520,8 @@ body{
     transition: transform 0.3s;
 }
 .back-to-top img{
-    width: 3vw;
-    height: 3vw;
+    width: 50px;
+    height: 50px;
 }
 .back-to-top:hover{
     cursor: pointer;
@@ -597,9 +597,14 @@ body{
     align-items: center;
 }
 
+.client-text {
+    padding: 0;
+    margin: 0;
+}
+
 .client-text p{
     font-size: 1.5rem;
-    margin-right: 2rem;
+    margin-right: 0rem;
 }
 
 .client-profile{
@@ -697,7 +702,7 @@ body{
     bottom: 0;
     width: 100%;
     height: 100%;
-    margin-top: 100vh;
+    margin-top: 120vh;
     padding: 6rem 0 0 8rem;
     display: flex;
     justify-content: space-evenly;
@@ -1012,7 +1017,7 @@ body{
 
     .footer {
         height: 100%;
-        margin-top: 60vh;
+        margin-top: 100vh;
         padding: 0 0 0 0;
         display: flex;
         justify-content: space-evenly;
@@ -1044,7 +1049,7 @@ body{
     }
     .foot-logo {
     
-        margin-bottom: -10%;
+        margin-bottom: -15vw;
     }
 }
 
@@ -1191,7 +1196,7 @@ body{
     }
 
     .section-body-text p {
-        margin-right: 10rem;
+        margin-right: 2rem;
     }
 
     .section-body-text:hover p {

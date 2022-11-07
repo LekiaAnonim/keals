@@ -32,8 +32,6 @@ const LandingRect = sectionLanding.getBoundingClientRect();
 const sectionLandingTop = LandingRect.top;
 const sectionLandingBottom = LandingRect.bottom;
 
-// console.log('---------------------------------');
-
 
 window.addEventListener('scroll', function () {
   let scrollY = document.documentElement.scrollTop;
@@ -47,6 +45,10 @@ window.addEventListener('scroll', function () {
       titleFirst.style.transform = `translateX(${-diff}px)`;
       titleSecond.style.transform = `translateX(${diff2}px)`;
       titleThird.style.transform = `translateX(${-diff1}px)`;
+    } else {
+      titleFirst.style.transform = `translateX(${0}px)`;
+      titleSecond.style.transform = `translateX(${0}px)`;
+      titleThird.style.transform = `translateX(${0}px)`;
     };
   }
 });

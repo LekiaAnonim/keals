@@ -19,6 +19,39 @@ window.addEventListener('scroll', function () {
   }
 })
 
+
+// --------------MOVING TEXT IN LANDING SECTION-------------------
+
+// ----------------------------------------------------
+
+const sectionLanding = document.querySelector('.second-divide');
+const titleFirst = document.querySelector('.first-title');
+const titleSecond = document.querySelector('.second-title');
+const titleThird = document.querySelector('.third-title');
+
+const LandingRect = sectionLanding.getBoundingClientRect();
+const sectionLandingTop = LandingRect.top;
+const sectionLandingBottom = LandingRect.bottom;
+
+// console.log('---------------------------------');
+
+
+window.addEventListener('scroll', function () {
+  let scrollY = document.documentElement.scrollTop;
+  if (scrollY > sectionLandingTop || scrollY < sectionLandingBottom) {
+    let diff = scrollY - 40;
+    let diff1 = scrollY - 70;
+    let diff2 = scrollY - 20;
+    // console.log(diff, diff1, diff2);
+
+    if (diff > 0 && diff < 500) {
+      titleFirst.style.transform = `translateX(${-diff}px)`;
+      titleSecond.style.transform = `translateX(${diff2}px)`;
+      titleThird.style.transform = `translateX(${-diff1}px)`;
+    };
+  }
+});
+
 // Mouse track
 
 

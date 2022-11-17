@@ -70,15 +70,15 @@ const sectionBottom = sectionRect.bottom;
 // console.log('---------------------------------');
 
 
-window.addEventListener('scroll', function () {
-  let scrollY = document.documentElement.scrollTop;
-  if (scrollY > sectionTop || scrollY < sectionBottom) {
-      let diff = scrollY - 1750;
-      if (diff > 0 && diff < 2500) {
-        sectionButton.style.transform = `translateY(${diff}px)`;
-      };
-  }
-});
+// window.addEventListener('scroll', function () {
+//   let scrollY = document.documentElement.scrollTop;
+//   if (scrollY > sectionTop || scrollY < sectionBottom) {
+//       let diff = scrollY - 1750;
+//       if (diff > 0 && diff < 2500) {
+//         sectionButton.style.transform = `translateY(${diff}px)`;
+//       };
+//   }
+// });
 
 function changeBackground(target, source) {
   target.addEventListener('click', () => {

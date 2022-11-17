@@ -170,7 +170,7 @@ li{
     transition: transform 0.1s linear;
 }
 .landing-section .title{
-    font-size: 12vw;
+    font-size: 14.5vw;
     color: #f8f5f5;
     text-transform: uppercase;
     font-family: NeueHaasDisplayBold;
@@ -226,7 +226,7 @@ li{
     width: 100%;
     height: 10vw;
     background-color: #fffefe;
-    color: #000000;
+    color: #0c1474;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,10 +236,10 @@ li{
 }
 
 .service-highlight-icon img{
-    min-width: 60px;
-    min-height: 60px;
-    width: 5vw;
-    height: 5vw;
+    min-width: 40px;
+    min-height: 40px;
+    width: 3vw;
+    height: 3vw;
 }
 .service-highlight-container{
     display: flex;
@@ -260,7 +260,11 @@ li{
 /* .i-service{
     width: 120px;
 } */
-
+.section-head-a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .animate-charcter {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
@@ -278,7 +282,8 @@ li{
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 190px;
+    font-size: 60px;
+    text-align: center;
 }
 .vessel-cleaning-video{
     width: 100%;
@@ -518,6 +523,7 @@ h2, p{
     margin-bottom: 4rem;
     font-family: NeueHaasDisplayBold, sans-serif;
 }
+
 .section-body-text p{
     padding-right: 0rem;
     font-family: NeueHaasDisplayLight, sans-serif;
@@ -534,7 +540,7 @@ h2, p{
 }
 .card-divisions{
     padding: 3rem;
-    height: 40rem;
+    height: fit-content;
     border-left: thin solid rgb(219, 218, 218);
     border-right: thin solid rgb(219, 218, 218);
 }
@@ -574,8 +580,8 @@ body{
     position: relative;
 }
 .back-to-top{
-    width: 6vw;
-    height: 6vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
     background: linear-gradient(110.6deg, rgb(184, 142, 252) 2.2%, rgb(104, 119, 244) 100.2%);
     padding: 3rem;
@@ -595,7 +601,7 @@ body{
 }
 .back-to-top:hover{
     cursor: pointer;
-    transform: scale(0.5);
+    transform: scale(0.8);
     
 }
 .contact-us{
@@ -701,19 +707,20 @@ body{
 
 .awards{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .awards .honor{
-    width: 100%;
-    height: 100%;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 4rem;
 }
 .awards .honor img{
-    max-width: 10vw;
-    max-height: 10vw;
+    width: 70px;
+    height: 70px;
 }
 .values-metrics{
     height: 100vh;
@@ -723,27 +730,56 @@ body{
 .text-values{
     margin-left: 0;
     padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
-.values-metrics .text-values h1{
-    font-size: 8rem;
+.strength-image{
+    width: 50%;
+}
+.strength-image img{
+    width: 100%;
+}
+.strengths{
+    width: 50%;
+}
+.values-metrics .strengths .our-main-focus {
+    font-size: 2rem;
     padding: 0;
     font-family: NeueHaasDisplayBold, sans-serif;
     text-transform: uppercase;
+    color: rgb(2, 15, 90);
+    margin-top: 4rem;
 }
-.values-metrics .text-values h2 {
-    font-size: 5rem;
-    padding: 0;
-    font-family: NeueHaasDisplayBold, sans-serif;
-    text-transform: uppercase;
+
+.strengths h2{
+    margin-top: 2rem;
     color: rgb(167, 167, 167);
 }
-.values-metrics .text-values span{
-    color: rgb(0, 0, 0);
+.our-pride{
+    width: fit-content;
+    /* min-width: 280px; */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* margin-top: 2rem; */
+    /* border: #000 solid; */
 }
-.values-metrics .text-values p {
-    font-size: 3rem;
-    font-family: NeueHaasDisplayLight, sans-serif;
-    text-transform: uppercase;
+.our-pride >* {
+    flex: 1 1 50%;
+}
+.our-pride div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* margin-right: 6rem; */
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    width: 50%;
+    /* border: #000 solid; */
+}
+.our-pride img{
+    width: 30px;
+    height: 30px;
 }
 .metrics{
     display: flex;
@@ -763,29 +799,29 @@ body{
     /* text-transform: uppercase; */
 }
 .fa-star{
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .checked {
     color: orange;
 }
 .footer{
     bottom: 0;
-    width: 100%;
-    height: 100%;
-    margin-top: 120vh;
-    padding: 6rem 0 0 8rem;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    padding: 20vh 0 0 8rem;
     display: flex;
     justify-content: space-evenly;
     background-color: #f5f5f5;
 }
 .footer .image{
     width: 100%;
-    height: 100%;
+    max-height: 100%;
 
 }
 .footer .image img {
     width: 100%;
-    height: 100vh;
+    max-height: 100%;
 
 }
 .footer .main{
@@ -1049,6 +1085,10 @@ body{
 
 }
 
+.section-body-text li{
+    list-style:circle;
+}
+
 @keyframes waviy {
 
     0%,
@@ -1063,8 +1103,23 @@ body{
 }
 
 
-
-
+.our-promise {
+    margin-top: 10rem;
+    background: #110035;
+    padding: 10px 20px 20px 20px;
+}
+.our-promise h1{
+    color: #fff;
+    font-family: NeueHaasDisplayBold, sans-serif;
+}
+.our-promise p{
+    color: #fff;
+    font-family: NeueHaasDisplayBold, sans-serif;
+}
+.our-promise h3 {
+    color: #fff;
+    font-family: NeueHaasDisplayBold, sans-serif;
+}
 
 @media (max-width:930px) {
     .first-section-container {
@@ -1092,8 +1147,8 @@ body{
 
     .footer {
         height: 100%;
-        margin-top: 100vh;
-        padding: 0 0 0 0;
+        margin-top: 0vh;
+        padding: 20vh 0 0 0;
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -1125,6 +1180,20 @@ body{
     .foot-logo {
     
         margin-bottom: -15vw;
+    }
+    .text-values{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .strength-image {
+        width: 100%;
+    }
+
+    .strengths {
+        width: 100%;
+    }
+    .our-promise{
+        margin-top: 50rem;
     }
 }
 
@@ -1330,4 +1399,26 @@ body{
         min-width: 280px;
 
     }
+    .our-promise {
+        margin-top: 50rem;
+    }
+
+        .metrics {
+            margin-top: 5rem;
+            flex-direction: column;
+        }
+    
+        .metrics .measure {
+            font-size: 6rem;
+        }
+    
+        .metrics .kpi {
+            
+            margin-bottom: 5px;
+        }
+}
+@media only screen and (max-width: 688px) {
+    .our-promise {
+            margin-top: 40rem;
+        }
 }

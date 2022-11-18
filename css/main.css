@@ -579,14 +579,23 @@ h2, p{
 body{
     position: relative;
 }
+#google_translate_element{
+    position: fixed;
+    top: 25%;
+    right: -50px;
+    transform: rotate(90deg);
+}
+#google_translate_element img{
+    display: none;
+}
 .back-to-top{
-    width: 3vw;
-    height: 3vw;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: linear-gradient(110.6deg, rgb(184, 142, 252) 2.2%, rgb(104, 119, 244) 100.2%);
-    padding: 3rem;
+    padding: 2rem;
     position: fixed;
-    top: 60vh;
+    bottom: 15vh;
     z-index: 10000;
     /* float: right; */
     right: 0rem;
@@ -596,8 +605,8 @@ body{
     transition: transform 0.3s;
 }
 .back-to-top img{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 .back-to-top:hover{
     cursor: pointer;
@@ -809,7 +818,7 @@ body{
     width: 100vw;
     height: 100vh;
     margin-top: 0;
-    padding: 20vh 0 0 8rem;
+    padding: 20vh 2rem 0 2rem;
     display: flex;
     justify-content: space-evenly;
     background-color: #f5f5f5;

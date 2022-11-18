@@ -288,9 +288,9 @@ label:nth-child(5) {
         opacity: 1;
     }
 }
-.footer{
-    margin-top: 10rem;
-}
+/* .footer{
+    margin-top: 0rem;
+} */
 
 @media only screen and (max-width: 768px) {
 

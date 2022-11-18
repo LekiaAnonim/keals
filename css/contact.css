@@ -1,6 +1,9 @@
 body{
     overflow-x: hidden;
 }
+.contact-us{
+    margin-top: 10rem;
+}
 .mapouter {
     overflow-x: hidden;
 }
@@ -32,7 +35,7 @@ body{
     align-items: center;
 }
 
-.footer {
-    margin-top: 10rem;
-}
+/* .footer {
+    margin-top: 0rem;
+} */
 

@@ -1,0 +1,41 @@
+body{
+    overflow-x: hidden;
+}
+.contact-us{
+    margin-top: 10rem;
+}
+.mapouter {
+    overflow-x: hidden;
+}
+.mapouter {
+    position: relative;
+    text-align: left;
+    height: 500px;
+    max-width: 1080px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    max-width: 1080px;
+}
+.office{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.office img{
+    width: 40px;
+    height: 40px;
+}
+.office-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .footer {
+    margin-top: 0rem;
+} */
+

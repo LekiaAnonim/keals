@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6{
     top: 0;
 }
 .black-background{
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color: rgba(0, 0, 0, 0.89);
     position: fixed;
     top: 0;
     z-index: 500;
@@ -163,7 +163,7 @@ li{
     justify-content: center;
     align-items: center;
     /* background: #fffb15; */
-    background: #000000c0;
+    background: #ffffffd3;
     z-index: 100;
     padding-bottom: 200px;
     overflow-x: hidden;
@@ -179,7 +179,7 @@ li{
 }
 .landing-section .title{
     font-size: 14.5vw;
-    color: #f8f5f5;
+    color: #000000;
     text-transform: uppercase;
     font-family: NeueHaasDisplayBold;
     padding: 0;
@@ -202,7 +202,7 @@ li{
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 @keyframes glow {
     from {
@@ -214,7 +214,7 @@ li{
     }
 }
 .landing-section .title-desc{
-    color: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
     width: 300px;
     font-size: 1.2rem;
     margin-top: 50px;

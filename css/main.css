@@ -216,8 +216,9 @@ li{
 .landing-section .title-desc{
     color: rgb(0, 0, 0);
     width: 300px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 50px;
+    font-weight: 700;
 }
 
 .service-highlight{
@@ -264,6 +265,7 @@ li{
     /* font-family: NeueHaasDisplayBold, sans-serif; */
     font-size: 1.2rem;
     color: #000000;
+    font-weight: 700;
 }
 
 /* .i-service{
@@ -360,15 +362,15 @@ li{
 }
 .section-image{
     width: 100%;
+    overflow: hidden;
 }
 .section-image img{
     width: 100%;
     height: 100%;
-    transition: transform 0.2s;
+    transition: transform 1s;
 }
 .section-image:hover img {
-    transform: scale(0.8, 0.8);
-    border-radius: 3rem;
+    transform: scale(1.5);
 }
 .section-head h1{
     font-size: 10rem;

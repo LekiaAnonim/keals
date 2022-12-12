@@ -1,6 +1,48 @@
+@font-face {
+    font-family: NeueHaasDisplayBold;
+    src: url(font/NeueHaasDisplayBold.ttf);
+}
+
+@font-face {
+    font-family: NeueHaasDisplayMediu;
+    src: url(font/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: NeueHaasDisplayLight;
+    src: url(font/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: BlackOps;
+    src: url(font/BlackOpsOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mullish;
+    src: url(font/Mullish/static/Mulish-Light.ttf);
+}
+
+
+
+p,
+a {
+    font-family: Mullish, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: NeueHaasDisplayBold;
+}
+
 body{
-    background: url('/images/circuit.png');
-    /* background-size: cover; */
+    /* background: url('/images/circuit.png'); */
 }
 .goals-values{
     padding: 8rem;
@@ -41,9 +83,9 @@ body{
     margin-bottom: 20px;
 }
 .goal-text{
-    font-size: 2rem;
+    /* font-size: 2rem; */
     padding-left: 2rem;
-    font-family: NeueHaasDisplayLight, sans-serif;
+    /* font-family: NeueHaasDisplayLight, sans-serif; */
 }
 .about-keals{
     padding: 8rem;
@@ -68,8 +110,8 @@ body{
     /* border: #7785ff solid; */
 }
 .about-keals-text p{
-    font-size: 20px;
-    font-family: NeueHaasDisplayLight, sans-serif;
+    /* font-size: 20px; */
+    /* font-family: NeueHaasDisplayLight, sans-serif; */
     font-weight: 400;
 }
 .about-keals-image{
@@ -181,7 +223,7 @@ body{
 .sub-group p{
     padding: 0;
     margin: 0;
-    font-family: NeueHaasDisplayLight, sans-serif;
+    /* font-family: NeueHaasDisplayLight, sans-serif; */
 }
 .plan-word {
     /* border: #ffffff solid; */
@@ -196,8 +238,8 @@ body{
 .plan-word p {
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    font-family: NeueHaasDisplayLight, sans-serif;
+    /* font-size: 18px; */
+    /* font-family: NeueHaasDisplayLight, sans-serif; */
 }
 
 .container {

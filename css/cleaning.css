@@ -1,3 +1,46 @@
+@font-face {
+    font-family: NeueHaasDisplayBold;
+    src: url(font/NeueHaasDisplayBold.ttf);
+}
+
+@font-face {
+    font-family: NeueHaasDisplayMediu;
+    src: url(font/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: NeueHaasDisplayLight;
+    src: url(font/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: BlackOps;
+    src: url(font/BlackOpsOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mullish;
+    src: url(font/Mullish/static/Mulish-Light.ttf);
+}
+
+
+
+p,
+a {
+    font-family: Mullish, sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: NeueHaasDisplayBold;
+}
+
 .slideshow {
     width: 100%;
     height: 90vh;
@@ -89,7 +132,7 @@
     font-size: 4vw;
 }
 .slide__content P{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     padding-right: 2rem;
 }
 
